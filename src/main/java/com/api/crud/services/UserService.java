@@ -33,6 +33,7 @@ public class UserService {
         user.setFirstName(request.getFirstName());
         user.setLastName(request.getLastName());
         user.setEmail(request.getEmail());
+        userRepository.save(user);
         
         return user;
     }
